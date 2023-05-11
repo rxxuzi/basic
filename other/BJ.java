@@ -1,8 +1,5 @@
 import java.util.*;
-/*
-@name Takeshi Fukuda
- * 
- */
+
 public class BJ {
 	public static int type = 13;
 	public static String Card ="A234567890JQK";
