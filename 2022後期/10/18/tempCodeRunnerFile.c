@@ -1,0 +1,1 @@
+printf("%4d 回目の傾き%20f\n",count,df(x,dx));

@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "typeinfo": "c",
+        "stdio.h": "c"
+    },
+    "files.watcherExclude": {
+        "**/target": true
+    }
+}
