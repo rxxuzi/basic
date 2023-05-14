@@ -1,0 +1,40 @@
+IDENTIFICATION DIVISION.
+PROGRAM-ID. SORTNAMES.
+
+ENVIRONMENT DIVISION.
+
+DATA DIVISION.
+
+WORKING-STORAGE SECTION.
+01  NAMES.
+    05  NAME PIC X(10) OCCURS 5 TIMES.
+01  I PIC 9(4) COMP-5.
+01  J PIC 9(4) COMP-5.
+01  TEMP PIC X(10).
+
+PROCEDURE DIVISION.
+
+    MOVE 'C' TO NAME (1)
+    MOVE 'Python' TO NAME (2)
+    MOVE 'Java' TO NAME (3)
+    MOVE 'Cobol' TO NAME (4)
+    MOVE 'Basic' TO NAME (5)
+
+    PERFORM VARYING I FROM 1 BY 1
+        UNTIL I > 4
+        PERFORM VARYING J FROM I + 1 BY 1
+            UNTIL J > 5
+            IF NAME (I) > NAME (J)
+                MOVE NAME (I) TO TEMP
+                MOVE NAME (J) TO NAME (I)
+                MOVE TEMP TO NAME (J)
+            END-IF
+        END-PERFORM
+    END-PERFORM
+
+    PERFORM VARYING I FROM 1 BY 1
+        UNTIL I > 5
+        DISPLAY 'NAME (' I ') = ' NAME (I)
+    END-PERFORM
+
+    STOP RUN.
