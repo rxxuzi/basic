@@ -1210,3 +1210,6 @@ import java.util.*;
 2023.05.12 05:40:16 WARN  no build target for: C:\Users\Dot_c\OneDrive\ドキュメント\TE科 c言語ノート\other\hello.scala
 2023.05.12 05:40:21 INFO  no build target found for C:\Users\Dot_c\OneDrive\ドキュメント\TE科 c言語ノート\other\hello.scala. Using presentation compiler with project's scala-library version: 3.2.2
 2023.05.12 05:40:24 INFO  time: code lens generation in 6.98s
+2023.05.12 07:36:08 INFO  Shutting down server
+2023.05.12 07:36:08 INFO  shutting down Metals
+2023.05.12 07:36:08 INFO  Exiting server
